@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/style.css">
-  <title>Flex-box</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Menu</title>
 
-  <style>
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    <style>
+      nav{
+        display: flex; /*Os links vai ficar ao lado da logo ao invés de ficar do lado*/
+        justify-content: space-between; /*Espaço entre a logo e os links*/
+        align-items: center; /*Alinhar itens no centro*/
+      }
 
-    nav ul {
-      font-size: 2.5rem;
-      list-style: none;
+      nav ul{
+        font-size: 2.5rem; /*Tamanho da fonte da lista*/
+        list-style: none; /*Tirar as bolinhas da lista*/
 
-      display: flex;
-      align-items: baseline;
-    }
+        display: flex; /*Vai colocar cada item da lista um ao lado outro*/
+        align-items: baseline; /*Alinhado pelo final do texto*/
+      }
 
-    nav ul li {
-      margin: 0 10px;
-    }
+      nav ul li{
+        margin: 0 10px; /*topo e inferior e esquerda e direita*/
+      }
 
-    nav ul li:nth-of-type(2) {
-      order: 1;
-    }
+      /*O item número 2 vai ficar na posição 1, que seria a segunda, pois começa com 0*/
+      nav ul li:nth-of-type(2){
+        order: 1;
+      }
 
-    nav ul li:nth-of-type(3) {
-      font-size: 3.5rem;
-    }
-  </style>
-</head>
+      nav ul li:nth-of-type(3){
+        font-size: 3.5rem;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <header class="flex">
+      <nav>
+        <img src="https://i.pinimg.com/474x/dc/49/e7/dc49e7091347b12cce1ff929d2d9f3c8.jpg" alt="">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
 
-  <header class="flex">
-    <nav>
-      <img src="https://vidafullstack.com.br/wp-content/uploads/2019/08/logo-4.png" alt="">
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
+          <li>
+            <a href="#">Sobre</a>
+          </li>
 
-        <li>
-          <a href="#">Sobre</a>
-        </li>
+          <li>
+            <a href="#">Portifólio</a>
+          </li>
 
-        <li>
-          <a href="#">Portfólio</a>
-        </li>
+          <li>
+            <a href="#">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <li>
-          <a href="#">Contato</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-</body>
+  </body>
 
 </html>

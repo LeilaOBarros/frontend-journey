@@ -33,7 +33,7 @@ body {
   box-sizing: border-box;
   border: 1px solid #FFF;
 
-  width: 500px !important; 
+  width: 100px; 
   background: #ff264e;  
   
   display: flex;
