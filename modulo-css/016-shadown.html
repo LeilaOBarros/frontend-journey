@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Shadow</title>
+        <style>
+            div{
+                position: relative;
+                padding: 30px;
+                background: pink;        
+                font-size: 22px;
+
+                /*
+                eixo x, eixo y, desfoque, cor
+                text-shadow: 2px 2px 5px #696969;
+                box-shadow: 0 10px 5px #696969;
+                */
+                transition: all 0.5s;
+            }
+
+            div:hover{
+                top: 2px;
+                text-shadow: 2px 2px 5px #696969;
+                box-shadow: 0 10px 30px #696969;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        </div>
+    </body>
+</html>

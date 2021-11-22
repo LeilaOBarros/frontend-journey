@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{
+            background: purple;
+            color: #FFF;
+            font-size: 30px;
+        }
+
+        p{
+            display: none;
+        }
+
+        @media(max-width: 500px){
+            body{
+                background: red;
+            }
+
+        }
+        @media(max-width: 320px){
+            body{
+                font-size: 50px;
+                background: pink;
+            }
+            p{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero expedita laborum temporibus ipsam quis ipsum, mollitia iure cupiditate quibusdam qui quam esse voluptatem vel repellendus quos, nesciunt ex error nobis.
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </p>
+</body>
+</html>

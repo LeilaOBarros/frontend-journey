@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Formulários </title>
+    </head>
+    <body>
+        <!--Formulário com campos de texto-->
+        <form>  
+            <div>
+                <label for="name"> Nome 
+                    <input type="text" id="name" value="Leila Barros"/>
+                </label>
+            </div>
+
+            <div>
+                <label for="email"> Email 
+                    <input type="email" id="email" required/>
+                </label>
+            </div>
+
+            <!--Radio: Apenas uma seleção-->
+            <div> 
+                <label> 
+                    <input type="radio" name="preco" value="150"> R$ 150,00
+                </label>
+
+                <label>
+                    <input type="radio" name="preco" value="200"> R$ 200,00
+                </label>
+
+                <label> 
+                    <input type="radio" name="preco" value="250"> R$ 250,00
+                </label>
+
+                <label>
+                    <input type="radio" name="preco" value="300"> R$ 300,00
+                </label>
+            </div>
+
+            <!--Checkbox: Várias seleções-->
+            <div>
+                <input type="checkbox" nome="variosprecos" value="10"> R$ 10,00
+                <input type="checkbox" nome="variosprecos" value="15"> R$ 15,00
+                <input type="checkbox" nome="variosprecos" value="20"> R$ 20,00
+                <input type="checkbox" nome="variosprecos" value="25"> R$ 25,00
+                <input type="checkbox" nome="variosprecos" value="30"> R$ 30,00
+            </div>
+
+            <!--Select: Caixa de seleção-->
+            <div> 
+                <label>
+                    Selecione o time: <br>
+                    <select>
+                        <option value="" selected>Selecione um time</option>
+                        <option value="São Paulo"> São Paulo </option>
+                        <option value="Palmeiras"> Palmeiras </option>
+                        <option value="Santos"> Santos </option>
+                        <option value="Corinthians"> Corinthians </option>  
+                    </select>
+                </label>
+            </div>
+
+            <!--Textarea: Área de texto-->    
+            <div>
+                <label> Digite seu comentário <br>
+                    <textarea>
+
+                    </textarea>
+                </label>
+            </div>
+
+            <!--Botão-->
+            <button>Enviar Formulário</button>
+        </form>
+    </body>
+</html>

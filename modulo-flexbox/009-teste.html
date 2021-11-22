@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex-Shrink e Flex-Basis</title>
+        <style>
+            #content {
+            display: flex;
+            width: 500px;
+            }
+
+            #content div {
+            flex-basis: 120px;
+            border: 3px solid rgba(0,0,0,.2);
+            }
+
+            .box {
+            flex-shrink: 1;
+            }
+
+            .box1 {
+            flex-shrink: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <p> 
+            A largura do conteúdo é 500px; a base flexível dos itens flex é 120px.
+        </p>
+        <p>
+            A, B, C têm encolhimento flexível: 1 conjunto. D e E têm encolhimento flexível: 2 conjuntos
+        </p>
+        <p>
+            A largura de D e E é menor que as outras. 
+        </p>
+        <div id="content">
+          <div class="box" style="background-color:red;">A</div>
+          <div class="box" style="background-color:lightblue;">B</div>
+          <div class="box" style="background-color:yellow;">C</div>
+          <div class="box1" style="background-color:brown;">D</div>
+          <div class="box1" style="background-color:lightgreen;">E</div>
+        </div> 
+    </body>
+</html>

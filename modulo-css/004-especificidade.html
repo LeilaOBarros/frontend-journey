@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Especificidade</title>
+        <style>
+            /* 0.0.0.1 */
+            p{
+                color: red;
+            }
+
+            /* 0.0.1.1 */
+            .nova-cor{
+                color:chartreuse;
+            }
+
+            /* 0.1.0.1 se no paragrafo 4 tivesse além do id="nova-cor-id" o class="nova-cor", dai seria 0.1.1.1*/
+            #nova-cor-id-1, #nova-cor-id-2{
+                color:darkgray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore minus consequatur veniam illo. Expedita corporis quam, nam obcaecati neque dolore commodi ipsam itaque consequatur provident, consequuntur asperiores quos est cupiditate.</p>
+        <p class="nova-cor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat! Corrupti incidunt, illo quos nobis placeat corporis sed quo sint odio harum dignissimos eaque aut officia temporibus similique est veritatis.</p>
+        <p class="nova-cor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil consectetur eveniet iste, ad nobis temporibus soluta quisquam illo. Eaque nesciunt reiciendis vel nam aspernatur? Officia odio odit magni voluptatibus!</p>
+        <p id="nova-cor-id-1" class="nova-cor">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, ad sed quaerat nobis exercitationem maxime itaque veniam magnam delectus corrupti, facilis, cumque fugit minima quas nulla culpa consectetur nam dolor!</p>
+        <!-- /* 1.1.1.1 */-->
+        <p id="nova-cor-id-1" class="nova-cor" style="color:darkolivegreen">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, ad sed quaerat nobis exercitationem maxime itaque veniam magnam delectus corrupti, facilis, cumque fugit minima quas nulla culpa consectetur nam dolor!</p>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam rerum minima labore veniam sed itaque numquam eos sequi aliquid? Impedit nostrum quis illo tempore optio ex sequi non, aspernatur quidem!</p>
+    </body>
+</html>
