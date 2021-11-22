@@ -3,7 +3,7 @@
 ## Sobre:
 📚 A Jornada Front-End é um projeto do canal [Vida FullStack](https://www.youtube.com/channel/UCbxACVU7yctKqRfA8-5cFOA) que vai ensinar de maneira gradativa alguns conceitos teóricos e práticos do desenvolvimento Front-end.
 
-## Cursos que serão abordados na Jornada:
+## Linguagens e Frameworks que serão abordados na Jornada:
 
 * HTML
 * CSS
