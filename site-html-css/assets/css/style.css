@@ -6,6 +6,7 @@
 @import './buttons.css';
 @import './main.css';
 @import './footer.css';
+@import './responsive.css';
 
 /*Reset CSS*/
 * {
@@ -21,8 +22,8 @@
 }
 
 body{
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-    /*background-image: url('../images/bolha-background.png');*/
+    /*background-image: linear-gradient(to right, #434343 0%, black 100%);*/
+    background-image: url('../images/bolha-background.png');
     background-repeat: no-repeat;
     background-position: left center;
 }
