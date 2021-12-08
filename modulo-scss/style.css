@@ -1,0 +1,13 @@
+/*Sempre e independetemente depois do p quero que o span seja de determinada cor*/
+p span {
+  background: red;
+}
+
+p b {
+  background: black;
+}
+
+body {
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */
