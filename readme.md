@@ -13,7 +13,7 @@
 * Javascript
   
 ## Projetos Práticos que serão desenvolvidos:
-* Site: HTML5 e CSS3
+* Site: HTML5 e CSS3 → https://leilaobarros.github.io/journey-frontend/site-html-css/
 * Site: HTML5, CSS3 e Bootstrap
 
 ## Intuito da Jornada
